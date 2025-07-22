@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+
+    <title>Card Checkout</title>
+</head>
+
+<body>
+    <form method="post" class="modal">
+        <div class="thirdParty">
+            <button type="button" class="party">
+                <img src="./paypal.png" alt="" srcset="./paypal.png">
+            </button>
+            <button type="button" class="party">
+                <img src="./apple-pay.png" alt="" srcset="./apple-pay.png">
+            </button>
+            <button type="button" class="party">
+                <img src="./google-pay.png" alt="" srcset="./google-pay.png">
+            </button>
+
+        </div>
+
+        <div class="altText">
+            <span class="line"></span>
+            <span>or pay using credit card</span>
+            <span class="line"></span>
+        </div>
+
+        <div class="card">
+            <label for="card-holder">Card holder full name</label>
+            <input type="text" name="card-holder" placeholder="Enter you full name">
+
+            <label for="card-numberr">Card Number</label>
+            <input type="text" name="card-number" placeholder="0000 0000 0000 0000">
+
+            <div class="expiration">
+
+                <input type="text" name="card-expiration" placeholder="01/23" id="expiry">
+                <input type="text" name="card-cvv" placeholder="CVV" id="cvv">
+            </div>
+        </div>
+        <button type="submit" id="checkout">Checkout</button>
+    </form>
+</body>
+
+</html>
